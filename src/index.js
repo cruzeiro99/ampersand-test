@@ -6,10 +6,10 @@ const { TemplateHandler } = require("./TemplateHandler")
 
 
 async function question(rl) {
-	let answer = await rl.question('Um número (mínimo 6)>');
+	let answer = await rl.question('Um número (mínimo 20)>');
 	answer = parseInt(answer);
-	if (answer < 6) {
-		console.log("Mínimo 6");
+	if (answer < 20) {
+		console.log("Mínimo 20");
 		return await question(rl);
 	}
 	return answer;
